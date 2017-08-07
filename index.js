@@ -28,8 +28,6 @@ io.on('connection', function(socket){
         socket.broadcast.emit('typing');
     })
 
-
-
     socket.on('disconnect' , function(){
         console.log(socket.id+" has disconnect")
     })
