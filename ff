@@ -1,0 +1,29 @@
+[33mcommit a08a3f41cbed2b9dcba89f13c202e177fa61a48c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Muhammad Akma Adhwa <muhdakma63@gmail.com>
+Date:   Mon Aug 7 22:46:49 2017 +0800
+
+    Clean the code
+
+[33mcommit b5a9f24b46c85bdb095c674a4ef8d68e2698690e[m
+Author: Muhammad Akma Adhwa <muhdakma63@gmail.com>
+Date:   Mon Aug 7 22:46:24 2017 +0800
+
+    Removing unnecessary li element
+
+[33mcommit bc0e6b966ae67341e65e9a2dbe95243705b2ffe3[m[33m ([m[1;31mheroku/master[m[33m)[m
+Author: Muhammad Akma Adhwa <muhdakma63@gmail.com>
+Date:   Mon Aug 7 22:31:37 2017 +0800
+
+    add the procfile
+
+[33mcommit d3e90c1354b8315b6f4552573467641f6a3f8718[m
+Author: Muhammad Akma Adhwa <muhdakma63@gmail.com>
+Date:   Mon Aug 7 22:28:19 2017 +0800
+
+    Update gitignore files
+
+[33mcommit ae05980601d4acb59c7315cbc0f49a159a5bf6b5[m
+Author: Muhammad Akma Adhwa <muhdakma63@gmail.com>
+Date:   Mon Aug 7 22:27:01 2017 +0800
+
+    initial commit
