@@ -1,0 +1,105 @@
+
+.navbar{
+
+  width: 100%;
+  background: none !important;
+  margin-top: .3rem;
+
+  .navbar-toggler{
+    cursor: pointer;
+    outline: 0;
+  }
+
+  .nav-item{
+    padding: 0 1rem;
+
+    @media(max-width: 34em){
+      padding:0;
+    }
+  }
+
+  .navbar-brand{
+    font-size: 1.5rem;
+    // letter-spacing: .1rem;
+    font-weight: bold;
+  }
+
+  .nav-link{
+    font-size: 1.2rem;
+    @media(max-width: 34em){
+      font-size: 1rem;
+    }
+  }
+
+  .btn{
+    border-radius: .5rem;
+    // width: 100px;
+    cursor: pointer;
+  }
+}
+
+.chat{
+  .chatbox{
+    background-color: #EEEEEE;
+    height: 25rem;
+    overflow-y: scroll;
+
+    li{
+      color: #3f3f3f;
+      background: none;
+    }
+  }
+
+  .btn{
+    cursor: pointer;
+  }
+
+  .chatcontainer{
+    padding-left: 0 !important;
+    margin-left:  0 !important;
+
+    .online-list{
+      background-color: #F3E5F5;
+      min-height: 25rem;
+      padding: 14px 0;
+      p{
+        text-align: center;
+        font-weight: bold;
+        font-size: 17px;
+
+      }
+      ul{
+        margin-top: 10px;
+      }
+      li{
+        font-size: 17px;
+        font-weight: lighter;
+        color: #3f3f3f;
+        list-style: none;
+      }
+      li::before {
+        content: "• ";
+        color: green; /* or whatever color you prefer */
+      }
+    }
+  }
+
+}
+
+//for placeholder
+::-webkit-input-placeholder {
+   font-style: italic;
+   color: #9C27B0;
+}
+:-moz-placeholder {
+   font-style: italic;
+   color: #9C27B0;
+}
+::-moz-placeholder {
+   font-style: italic;
+   color: #9C27B0;
+}
+:-ms-input-placeholder {
+   font-style: italic;
+   color: #9C27B0;
+}

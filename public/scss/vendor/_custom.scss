@@ -1,0 +1,14 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$white: #FAFAFA;
+$purple: #9C27B0;
+$black:  #3f3f3f;
+
+$brand-primary: $purple;
+$inverse-color: $white;
+$enable-rounded:  false;
+
+$font-family-sans-serif: Lato, Roboto, "Helvetica Neue", Arial, sans-serif ;

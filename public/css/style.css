@@ -1,0 +1,74 @@
+@charset "UTF-8";
+.navbar {
+  width: 100%;
+  background: none !important;
+  margin-top: .3rem; }
+  .navbar .navbar-toggler {
+    cursor: pointer;
+    outline: 0; }
+  .navbar .nav-item {
+    padding: 0 1rem; }
+    @media (max-width: 34em) {
+      .navbar .nav-item {
+        padding: 0; } }
+  .navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .navbar .nav-link {
+    font-size: 1.2rem; }
+    @media (max-width: 34em) {
+      .navbar .nav-link {
+        font-size: 1rem; } }
+  .navbar .btn {
+    border-radius: .5rem;
+    cursor: pointer; }
+
+.chat .chatbox {
+  background-color: #EEEEEE;
+  height: 25rem;
+  overflow-y: scroll; }
+  .chat .chatbox li {
+    color: #3f3f3f;
+    background: none; }
+
+.chat .btn {
+  cursor: pointer; }
+
+.chat .chatcontainer {
+  padding-left: 0 !important;
+  margin-left: 0 !important; }
+  .chat .chatcontainer .online-list {
+    background-color: #F3E5F5;
+    min-height: 25rem;
+    padding: 14px 0; }
+    .chat .chatcontainer .online-list p {
+      text-align: center;
+      font-weight: bold;
+      font-size: 17px; }
+    .chat .chatcontainer .online-list ul {
+      margin-top: 10px; }
+    .chat .chatcontainer .online-list li {
+      font-size: 17px;
+      font-weight: lighter;
+      color: #3f3f3f;
+      list-style: none; }
+    .chat .chatcontainer .online-list li::before {
+      content: "• ";
+      color: green;
+      /* or whatever color you prefer */ }
+
+::-webkit-input-placeholder {
+  font-style: italic;
+  color: #9C27B0; }
+
+:-moz-placeholder {
+  font-style: italic;
+  color: #9C27B0; }
+
+::-moz-placeholder {
+  font-style: italic;
+  color: #9C27B0; }
+
+:-ms-input-placeholder {
+  font-style: italic;
+  color: #9C27B0; }
