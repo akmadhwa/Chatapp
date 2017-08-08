@@ -22,22 +22,22 @@ $('#textinput').keydown(function(event) {
     }
 });
 
-$('#textinput').keypress(function(){
+$('#textinput').keypress( function() {
     socket.emit('typing');
 })
 
-function scrolltop(){
+function scrolltop() {
     $('.chatbox').scrollTop($('.chatbox').height()*1000);
 }
 
-socket.on('chat', function(data){
+socket.on('chat', function(data) {
     message.value = '';
-    istyping.innerHTML='';
-   $(chatbox).append('<li class="list-group-item"> '+data.message+'</li>');
+    istyping.innerHTML = '';
+    $(chatbox).append('<li class="list-group-item"> '+data.message+'</li>');
     scrolltop();
 });
 
-socket.on('typing', function(){
+socket.on('typing', function() {
     istyping.innerHTML = '<p><em>Someone is typing a message...</em><p>';
     scrolltop();
 });
