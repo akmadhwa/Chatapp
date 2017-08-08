@@ -37,9 +37,18 @@
 .chat .chatcontainer {
   padding-left: 0 !important;
   margin-left: 0 !important; }
+  .chat .chatcontainer .online-count {
+    background: #BBDEFB;
+    min-height: 5rem;
+    margin-bottom: 10px; }
+    .chat .chatcontainer .online-count p, .chat .chatcontainer .online-count h2 {
+      text-align: center;
+      font-weight: bold; }
+    .chat .chatcontainer .online-count h2 {
+      margin-top: -10px; }
   .chat .chatcontainer .online-list {
     background-color: #F3E5F5;
-    min-height: 25rem;
+    min-height: 19rem;
     padding: 14px 0; }
     .chat .chatcontainer .online-list p {
       text-align: center;
