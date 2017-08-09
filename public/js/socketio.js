@@ -37,9 +37,9 @@ function scrolltop() {
 
 socket.on('chat', function(data) {
     message.value = '';
-    istyping.innerHTML = '';
     $(chatbox).append('<li class="list-group-item"> <b>'+data.name+'</b> : '+data.message+'</li>');
     scrolltop();
+    istyping.innerHTML = '';
 });
 
 socket.on('typing', function() {
