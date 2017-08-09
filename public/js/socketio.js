@@ -31,6 +31,11 @@ $('#textinput').keypress( function() {
     socket.emit('typing');
 })
 
+//Fix the innerhtml clear when ENTER
+setInterval(function(){
+    istyping.innerHTML = "";
+}, 3000);
+
 function scrolltop() {
     $('.chatbox').scrollTop($('.chatbox').height()*1000);
 }
