@@ -16,9 +16,12 @@ app.get('/',function(req,res){
 })
 
 var io = socket(server);
+let count = 0;
 
 io.on('connection', function(socket){
     console.log('Made a Socket connection ID : ' + socket.id)
+    console.log('total connection : '+ ++count);
+    io.sockets.emit('counter', count);
 
     socket.on('chat', function(data){
         io.sockets.emit('chat', data);
@@ -29,7 +32,9 @@ io.on('connection', function(socket){
     })
 
     socket.on('disconnect' , function(){
-        console.log(socket.id+" has disconnect")
+        console.log(socket.id+" has disconnect");
+        console.log('total connection : '+ --count);
+        io.sockets.emit('counter', count);
     })
 });
 
