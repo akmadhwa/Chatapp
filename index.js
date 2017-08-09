@@ -27,8 +27,8 @@ io.on('connection', function(socket){
         io.sockets.emit('chat', data);
     })
 
-    socket.on('typing', function(){
-        socket.broadcast.emit('typing');
+    socket.on('typing', function(data){
+        socket.broadcast.emit('typing', data);
     })
 
     socket.on('disconnect' , function(){

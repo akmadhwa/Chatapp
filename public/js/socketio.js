@@ -28,7 +28,7 @@ $('#textinput').keydown(function(event) {
 });
 
 $('#textinput').keypress( function() {
-    socket.emit('typing');
+    socket.emit('typing', NAME);
 })
 
 //Fix the innerhtml clear when ENTER
@@ -47,8 +47,8 @@ socket.on('chat', function(data) {
     istyping.innerHTML = '';
 });
 
-socket.on('typing', function() {
-    istyping.innerHTML = '<p><em>Someone is typing a message...</em><p>';
+socket.on('typing', function(data) {
+    istyping.innerHTML = '<p><em>'+data+' is typing a message...</em><p>';
     scrolltop();
 });
 
