@@ -27,7 +27,7 @@ $('#textinput').keydown(function(event) {
     }
 });
 
-$('#textinput').keypress( function() {
+$('#textinput').keydown( function() {
     socket.emit('typing', NAME);
 })
 
